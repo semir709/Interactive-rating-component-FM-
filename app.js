@@ -1,3 +1,4 @@
+const { query } = require('express');
 const express = require('express');
 
 const app = express();
@@ -16,7 +17,17 @@ app.get('/card', (req, res) => {
 });
 
 app.get('/msg', (req, res) => {
-    res.render('msg_card.ejs');
+
+    const num = req.query.num;
+
+    res.render('msg_card.ejs', {num: num});
+});
+
+app.get('/send', (req, res) => {
+
+    const num = req.query.num;
+
+    res.json({link: '/msg', num: num});
 });
 
 

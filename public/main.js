@@ -1,5 +1,6 @@
 
 const list = document.querySelector('#list');
+const submit = document.querySelector('#submit_btn');
 
 list.addEventListener('click', function(e) {
 
@@ -33,5 +34,25 @@ list.addEventListener('mouseout', function(e) {
         e.target.classList.remove('hover');
         
     }
+
+});
+
+submit.addEventListener('click', function(e) {
+
+    let num = 0;
+
+    for(let i = 0; i < list.children.length; i++) {
+
+        if(list.children[i].tagName === 'LI' && list.children[i].classList.contains('active')) {
+
+            num = list.children[i].innerHTML;
+        }
+    }
+
+    fetch(`/send/?num=${num}`).then((res) => {
+        return res.json();
+    }).then(data => {
+        window.location.href = data.link + `?num= ${data.num}`;
+    });
 
 });
