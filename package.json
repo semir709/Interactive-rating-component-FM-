@@ -1,0 +1,23 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semir709/Interactive-rating-component-FM-.git"
+  },
+  "author": "Semir Selman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semir709/Interactive-rating-component-FM-/issues"
+  },
+  "homepage": "https://github.com/semir709/Interactive-rating-component-FM-#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

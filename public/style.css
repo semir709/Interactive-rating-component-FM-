@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&family=Overpass:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: overpass;
+    font-weight: 400;
+}
+
+body {
+    background: hsl(216, 12%, 8%);
+    color: #fff;
+}
+
+
+.card {
+    width: 340px;
+    background: hsl(213, 19%, 18%);
+    background: radial-gradient(at top , hsl(213, 19%, 18%) , hsl(213, 40%, 12%));
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.star-holder {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: hsl(210, 21%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.star-holder img {
+    width: 45%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.header {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-weight: 400;
+    margin-bottom: 25px;
+    opacity: 0.5;
+    line-height: 150%;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.list li {
+    
+    background-color:hsl(210, 21%, 20%);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+/*EVENT CLASS*/
+
+/*-------------------------------------------*/
+
+.hover {
+    opacity: 1 !important;
+    color: #fff !important;
+    background-color: hsl(25, 97%, 53%) !important;
+    cursor: pointer !important;
+}
+
+.active {
+    
+    opacity: 1 !important;
+    color: #fff !important;
+    background-color: hsl(217, 12%, 63%) !important;
+
+}
+
+/*-------------------------------------------*/
+
+.sub-btn {
+    width: 100%;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.sub-btn:hover {
+    background: #fff;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
