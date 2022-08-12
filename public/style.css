@@ -16,7 +16,7 @@ body {
 
 
 .card {
-    width: 340px;
+    width: 33%;
     background: hsl(213, 19%, 18%);
     background: radial-gradient(at top , hsl(213, 19%, 18%) , hsl(213, 40%, 12%));
     margin: 5% auto;
@@ -112,3 +112,37 @@ body {
     color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
+
+
+/*Tahk you card*/
+
+.img-holder {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.select-msg {
+    width: 55%;
+    font-size: auto;
+    margin: 0px auto 30px auto;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: hsl(210, 21%, 20%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+}
+
+.thk-header {
+    text-align: center;
+}
+
+.thk-paragraph {
+   text-align: center;
+}
+
