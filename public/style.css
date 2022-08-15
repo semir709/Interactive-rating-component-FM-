@@ -16,7 +16,7 @@ body {
 
 
 .card {
-    width: 33%;
+    width: 390px;
     background: hsl(213, 19%, 18%);
     background: radial-gradient(at top , hsl(213, 19%, 18%) , hsl(213, 40%, 12%));
     margin: 5% auto;
@@ -144,5 +144,15 @@ body {
 
 .thk-paragraph {
    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 350px;
+    }
+
+    .select-msg {
+        width: 60%;
+    }
 }
 
